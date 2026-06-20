@@ -123,6 +123,11 @@ python src/ingest.py
 
 python src/main.py
 
+## Run Locally 
+
+streamlit run app.py 
+
+
 ## Results
 
 The system successfully:
@@ -169,13 +174,13 @@ Through this project, I gained practical knowledge in:
 * Python project development
 * API integration
 
+## Features 
+
+- Ask questions from documents
+- Powered by Gemini API
+- Streamlit web interface 
+
 ## Live Demo
 
 https://document-app-bot-a6vht9hdqhyjyymj6f4qbj.streamlit.app/
 
-## Features 
-
-- Google Gemini API
-- ChromaDB
-- Streamlit UI
-- Document Question Answering
