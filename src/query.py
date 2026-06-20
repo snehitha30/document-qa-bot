@@ -86,8 +86,13 @@ Question:
 """
 
     response = client_genai.models.generate_content(
-        model="gemini-2.5-flash",
-        contents=prompt
+    model="gemini-2.5-flash",
+    contents=prompt
+)
+    citations = list(
+        set(
+            f"{meta['source']} (Page {meta['page']})"
+            for meta in results["metadatas"][0]
+        )
     )
-
-    return response.text
+    return response.text, citations

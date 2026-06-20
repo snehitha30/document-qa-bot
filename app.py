@@ -10,7 +10,11 @@ question = st.text_input(
 )
 
 if st.button("Get Answer"):
-    if question:
-        answer = query_rag_pipeline(question)
-        st.write("### Answer")
-        st.write(answer)
+    answer, citations = query_rag_pipeline(question)
+
+    st.subheader("Answer")
+    st.write(answer)
+
+    st.subheader("Sources")
+    for citation in citations:
+        st.write(citation)
