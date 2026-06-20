@@ -1,11 +1,22 @@
+import sys
+
+print("Python executable:", sys.executable)
+
 import os
 import chromadb
 from dotenv import load_dotenv
 from google import genai
 
+print("GenAI imported successfully")
+
 load_dotenv()
 
+import streamlit as st
+
 api_key = os.getenv("GEMINI_API_KEY")
+
+if not api_key:
+    api_key = st.secrets["GEMINI_API_KEY"]
 
 client_genai = genai.Client(api_key=api_key)
 
