@@ -33,11 +33,7 @@ The primary objective of this project is to develop a document question answerin
 | Python-Dotenv     | Environment variable management  |
 | Streamlit         | Optional user interface          |
 
-## Features
-- Document-based question answering
-- Gemini API integration
-- ChromaDB vector database
-- Streamlit web interface
+
 
 ## Project Workflow
 
@@ -176,3 +172,10 @@ Through this project, I gained practical knowledge in:
 ## Live Demo
 
 https://document-app-bot-a6vht9hdqhyjyymj6f4qbj.streamlit.app/
+
+## Features 
+
+- Google Gemini API
+- ChromaDB
+- Streamlit UI
+- Document Question Answering
